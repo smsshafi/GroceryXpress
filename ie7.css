@@ -1,0 +1,50 @@
+fieldset {
+	margin-right: 0%;
+	margin-left: 0%;
+}
+
+.messageWrapper {
+	height: 26px;
+}
+
+.masterDropDown {
+	width: 350px;
+	min-width: 350px;
+	max-width: 350px;
+}
+
+.btnmakeover {
+	width: 0;
+	overflow: visible;
+	padding-left: 31px;
+	width: auto;
+}
+
+.hugebutton {
+	padding-left: 70px;
+	border: 1px solid;
+}
+
+.crud {
+	background-color: #D7E7EE;
+}
+
+.header {
+	text-align: left;
+}
+
+.uwlogo {
+	margin-top: 12px;
+}
+
+.loginform {
+	background-color: #D7E7EE;
+}
+
+#slidingInformation {
+	overflow: auto;
+}
+
+form {
+	margin: 0;
+}

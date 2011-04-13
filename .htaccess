@@ -1,0 +1,3 @@
+DirectoryIndex index.php
+#php_flag display_errors on
+#php_flag html_errors on
