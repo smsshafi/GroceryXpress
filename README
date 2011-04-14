@@ -1,0 +1,22 @@
+GroceryXpress is a prototype for a web platform that lets grocery stores provide a more interactive online shopping experience for their customers.
+
+Overview:
+
+The platform is created in PHP and supported with a MySQL backend.
+
+Pre-reqs:
+
+PHP 5 or above
+MySQL 5 or above
+
+Instructions:
+
+Run your favourite local webserver (Apache or Nginx) with PHP 5 and MySQL.
+
+secure.php contains the MySQL database credentials. Set your database name there, and then create a database with that name.
+
+The tables for the database are stored in database_dump.sql (with some test data). Import this into your database.
+
+localsettings.php contains the root URL that the platform uses. It is currently pointing to the live site. You may want to point it instead to a local dev server running on your machine.
+
+siteconfig.php contains other useful settings that you may have to change.
