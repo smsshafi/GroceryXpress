@@ -343,7 +343,7 @@ $sWebRoot."/confirmemail.php".
         return UpdateEntryInTable('fydp_users', $values);
     }
 
-    function AuthenticateRegularUser($email, $password) {
+    function AuthenticateRegularUser($email, $password, $api=false) {
         $email = mysql_escape_string($email);
         $password = mysql_escape_string($password);
         $response['error'] = true;
@@ -355,6 +355,9 @@ $sWebRoot."/confirmemail.php".
             {
                 $response['error'] = false;
                 $response['message'] = "";
+                if ($api==true) {
+                    
+                }
             }
             else
             {
