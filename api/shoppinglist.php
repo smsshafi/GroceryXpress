@@ -1,6 +1,6 @@
 <?php
     include_once '../etc.php';
-    $result = GetShoppingList($_GET['userid']);
+    $result = GetShoppingList($_POST['userid']);
     $hide_search = "";
     $response = array();
     if (mysql_num_rows($result) != 0) {
