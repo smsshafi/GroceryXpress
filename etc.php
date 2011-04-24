@@ -571,6 +571,25 @@ $sWebRoot."/confirmemail.php".
             return $error;
         }
     }
+    
+    function SetQuantityForProductInList($user_id, $product_id, $quantity) {
+        if (!CheckIfProductInList($product_id, $user_id))
+        {
+            return AddProductToList($product_id, $user_id);
+        }
+        $list_id = GetListFromUserID($user_id);
+        $SQLConn = SQLConnect();
+        $result = mysql_query("UPDATE fydp_listitems SET quantity='$quantity' WHERE product_id='$product_id' AND list_id='$list_id'");
+        $error = mysql_error();
+        SQLDisconnect($SQLConn);
+        if ($error == "")
+        {
+            return true;
+        }
+        else {
+            return $error;
+        }
+    }
 
     function GetListFromUserID($user_id) {
         $result = GetRowsFromTable('fydp_lists', 'user_id', $user_id);
